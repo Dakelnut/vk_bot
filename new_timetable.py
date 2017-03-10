@@ -88,8 +88,8 @@ class TimeTableBot():
                 else:
                     f = open('errors.txt', 'w')
                 f.write("------------------------------------------------" + "\n")
-                f.write(str(dict_of_messages) + "\n")
-                f.write(str(traceback.format_exc()) + "\n")
+                f.write("Messages: "+str(dict_of_messages) + "\n")
+                f.write(str(traceback.print_exc()) + "\n")
                 f.close()
                 sleep(3)
                 continue
