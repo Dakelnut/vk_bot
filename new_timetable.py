@@ -1,18 +1,6 @@
 import vk_requests
-from xlrd import xldate_as_tuple
-import xlrd
 from time import sleep
-from datetime import datetime
-from itertools import cycle
-from collections import Counter
-import nltk
-from nltk.corpus import stopwords
-import string
-import pymorphy2
 import sys
-import re
-import pickle
-import calendar
 import listening_vk
 import understand_message
 import traceback
