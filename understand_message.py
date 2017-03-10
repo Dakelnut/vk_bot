@@ -54,7 +54,7 @@ def understand_meaning(message,name_of_bd):
                 dict.update({theme: dict.setdefault(theme, 0) + row[0][1]})
     conn.close()
     try:
-        if len(dict.values()) == 0:
+        if (len(dict.values()) == 0) or dict.values() == None:
             ans = "К сожалению, я не понял того, что вы попросили, попробуйте ещё раз!"
             return ans
         else:
