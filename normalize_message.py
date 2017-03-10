@@ -1,4 +1,3 @@
-import nltk
 import pymorphy2
 import string
 # функция по обработке текста и преобразования его в нормализованный список
